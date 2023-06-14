@@ -305,7 +305,9 @@ table {
   background-color: #35dba2;
   border-radius: 30px;
   color: white;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #yel {
   height: 30px;
@@ -314,4 +316,7 @@ table {
   border-radius: 30px;
   color: white;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
