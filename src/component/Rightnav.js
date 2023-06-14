@@ -7,6 +7,7 @@ import art from "../assets/Artboard 02.png";
 import Table from "./Table";
 const API = "https://upride-internships-default-rtdb.firebaseio.com/.json";
 function Rightnav() {
+  //fetching data for three parts active , completed and cancelled
   const [activeBookings, setActiveBookings] = useState([]);
   const [completedBookings, setCompletedBookings] = useState([]);
   const [cancelledBookings, setCancelledBookings] = useState([]);
@@ -20,7 +21,8 @@ function Rightnav() {
       temp = temp.map((item, index) => Object.values(item));
       temp = temp.flat();
       //console.log(temp);
-
+      //Setting the data by booking status as success/completed/cancelled
+      //It is sorted also using bookingEpochTime
       setActiveBookings(
         temp
           .filter((booking) => booking.bookingStatus === "SUCCESS")
@@ -46,12 +48,6 @@ function Rightnav() {
   useEffect(() => {
     fetchUser(API);
   }, []);
-
-  useEffect(() => {
-    console.log("S", activeBookings);
-    console.log("Comop", completedBookings);
-    console.log("CAN", cancelledBookings);
-  }, [activeBookings, completedBookings, cancelledBookings]);
 
   return (
     <>

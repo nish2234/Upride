@@ -11,6 +11,7 @@ import rec1 from "../assets/Rectangle 123.png";
 import rec2 from "../assets/Rectangle 124.png";
 
 function Leftnav() {
+  //This page contains the left navbar of the webpage
   return (
     <>
       <div className="t1">
