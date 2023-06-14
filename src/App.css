@@ -18,7 +18,7 @@
 }
 .x1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
@@ -37,6 +37,7 @@
   flex-direction: column;
   justify-content: space-around;
   margin-top: 20px;
+  width: 20vw;
 }
 .x4 {
   height: 150px;
@@ -46,13 +47,22 @@
 }
 .nav1 {
   display: flex;
-  width: 200px;
+  width: 20vw;
   align-items: center;
+  height: 10vh;
+  gap: 30px;
+  
+}
+.nav1 img{
+ margin-left: 50px;
+}
+.bg{
+  width: 20vw;
+  background-color: #ffffff2a;
+  
 }
 
-.logo1 {
-  margin-right: 30px;
-}
+
 .logo1 img {
   width: 24px;
   height: 24px;
@@ -71,7 +81,7 @@
   background-color: white;
 }
 .r1 {
-  width: 82vw;
+  width: 80vw;
   height: 10vh;
   background-color: white;
   filter: drop-shadow(6px 3px 2px #94949b);

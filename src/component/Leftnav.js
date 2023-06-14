@@ -38,7 +38,7 @@ function Leftnav() {
           </div>
         </div>
         <div className="x3">
-          <div className="nav1 blurback">
+          <div className="nav1 bg">
             <div className="logo1 ">
               <img src={vector} alt="" />
             </div>
