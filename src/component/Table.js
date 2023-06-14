@@ -46,7 +46,7 @@ function Table({ bookings }) {
                     height={30}
                     alt=""
                   />
-                  <span> {booking.clientName}</span>
+                  <span className="alg"> {booking.clientName}</span>
                 </div>
               </td>
               <td className="table-item">
